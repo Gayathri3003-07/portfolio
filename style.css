@@ -1,0 +1,218 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fc;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:#031b4e;
+padding:20px 0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+width:90%;
+margin:auto;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav a:hover{
+color:#4da6ff;
+}
+
+.hero{
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.hero-content{
+max-width:500px;
+}
+
+.hero h1{
+font-size:55px;
+color:#031b4e;
+}
+
+.hero h2{
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.hero-image img{
+width:300px;
+border-radius:50%;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.btn,
+.btn-outline{
+padding:12px 24px;
+text-decoration:none;
+border-radius:8px;
+margin-right:10px;
+display:inline-block;
+}
+
+.btn{
+background:#2563eb;
+color:white;
+}
+
+.btn-outline{
+border:2px solid #2563eb;
+color:#2563eb;
+}
+
+.skills,
+.projects,
+.about,
+.contact{
+padding:60px 10%;
+}
+
+.skills h2,
+.projects h1,
+.about h1,
+.contact h1{
+text-align:center;
+margin-bottom:40px;
+color:#031b4e;
+}
+
+.skill-container,
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.about-card{
+display:flex;
+gap:30px;
+align-items:center;
+flex-wrap:wrap;
+margin-bottom:40px;
+}
+
+.about-card img{
+width:250px;
+border-radius:15px;
+}
+
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+form label{
+display:block;
+margin-top:15px;
+margin-bottom:5px;
+font-weight:600;
+}
+
+form input,
+form textarea{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+form button{
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#031b4e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-image img{
+margin-top:30px;
+width:220px;
+}
+
+.about-card{
+justify-content:center;
+text-align:center;
+}
+
+}
