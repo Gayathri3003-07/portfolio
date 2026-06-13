@@ -1,3 +1,8 @@
+:root{
+  --primary-color:#2563eb;
+  --dark-color:#031b4e;
+}
+
 *{
 margin:0;
 padding:0;
@@ -12,7 +17,7 @@ line-height:1.6;
 }
 
 header{
-background:#031b4e;
+background:var(--dark-color);
 padding:20px 0;
 }
 
@@ -92,7 +97,7 @@ display:inline-block;
 }
 
 .btn{
-background:#2563eb;
+background:var(--primary-color);
 color:white;
 }
 
@@ -172,7 +177,7 @@ border-radius:8px;
 form button{
 margin-top:20px;
 padding:12px 25px;
-background:#2563eb;
+background:var(--primary-color);
 color:white;
 border:none;
 border-radius:8px;
